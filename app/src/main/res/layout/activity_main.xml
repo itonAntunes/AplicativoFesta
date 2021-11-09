@@ -1,18 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv01"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:text="Item 01" />
+
+    <TextView
+        android:id="@+id/tv02"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/tv01"
+        android:text="Item 02"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/teal_700"/>
+
+    <TextView
+        android:id="@+id/tv04"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/tv03"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:text="Item 02" />
+
+    <TextView
+        android:id="@+id/tv03"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/tv02"
+        android:text="Item 02"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/teal_700"/>
+
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="150dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_abaixo1_01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 01" />
+
+        <TextView
+            android:id="@+id/tv_abaixo1_02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo1_01"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+        <TextView
+            android:id="@+id/tv_abaixo1_03"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo1_02"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+        <TextView
+            android:id="@+id/tv_abaixo1_04"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo1_03"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <TextView
+            android:id="@+id/tv_abaixo2_01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 01" />
+
+        <TextView
+            android:id="@+id/tv_abaixo2_02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo2_01"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+        <TextView
+            android:id="@+id/tv_abaixo2_03"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo2_02"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+        <TextView
+            android:id="@+id/tv_abaixo2_04"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo2_03"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp">
+
+        <TextView
+            android:id="@+id/tv_abaixo3_01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 01" />
+
+        <TextView
+            android:id="@+id/tv_abaixo3_02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo3_01"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+        <TextView
+            android:id="@+id/tv_abaixo3_03"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo3_02"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+        <TextView
+            android:id="@+id/tv_abaixo3_04"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_abaixo3_03"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:text="Item 02" />
+
+
+    </RelativeLayout>
